@@ -1,0 +1,30 @@
+1. actionTypes.js
+2. actions.js
+3. reducer.js
+4. App.js
+5. store.js
+6. index.js
+
+npm install redux react-redux redux-thunk
+
+After reducer.js
+
+In your React component, you would use useDispatch to dispatch the fetchPosts action,
+ and useSelector to select the state you want from the Redux store.
+
+ App.js
+
+ Don't forget to set up your Redux store and apply the thunk middleware.
+
+store.js
+
+Once you've created your Redux store, 
+you need to provide it to your React application. 
+This is done by using the Provider component from 'react-redux' at the top level of your app.
+
+index.js
+
+The Provider makes the Redux store available to any nested components 
+that have been wrapped in the connect() function 
+(or use the useDispatch and useSelector hooks as in our example).
+
